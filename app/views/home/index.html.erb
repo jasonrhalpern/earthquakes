@@ -1,0 +1,7 @@
+<%= form_tag search_earthquakes_path, method: 'get' do %>
+  <%= label_tag 'Start Date' %>
+  <%= text_field_tag :start_date, params[:start_date], autofocus: true, value: 30.days.ago.to_date, placeholder: 30.days.ago.to_date %>
+  <%= label_tag 'End Date' %>
+  <%= text_field_tag :end_date, params[:end_date], autofocus: true, value: Date.today, placeholder: Date.today %>
+  <%= submit_tag 'Search', name: nil %>
+<% end %>

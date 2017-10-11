@@ -1,0 +1,9 @@
+<h2><%= "Earthquakes Felt in LA between #{@start_date.to_date} and #{@end_date.to_date} (first 10)" %></h2>
+<% @earthquakes.each do |earthquake| %>
+  <div class="earthquake-result">
+    <div>Time: <%= earthquake.time_of %></div>
+    <div>Place: <%= earthquake.place %></div>
+    <div>Magnitude: <%= earthquake.magnitude %></div>
+    <div>Distance from LA (miles): <%= earthquake.distance_from_la %></div>
+  </div>
+<% end %>

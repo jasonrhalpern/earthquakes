@@ -1,0 +1,25 @@
+== README
+
+Steps to get up and running
+
+* Ruby version
+2.3.1
+
+* Setup
+Run 'bundle install'
+
+* Database creation
+Run 'rake db:migrate'
+
+* Database initialization (creating earthquakes in DB from CSV file)
+Run bundle exec rake process_earthquakes_csv:create_earthquakes
+
+* How to run the test suite
+Run 'rspec'
+
+* Services (job queues, cache servers, search engines, etc.)
+Start server with 'rails s'
+
+* CSV data
+Located in '/lib/all_month.csv'
+
